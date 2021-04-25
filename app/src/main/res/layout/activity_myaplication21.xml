@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_bright"
+    tools:context=".Myaplication21">
+    <TextView
+        android:id="@+id/Level_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1 уровень"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+    <TextView
+        android:id="@+id/question_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Когда идет снег?"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Level_tv"/>
+    <EditText
+        android:id="@+id/answer_ed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@android:color/holo_purple"
+        android:hint="Ваш ответ"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/darker_gray"
+        android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@+id/question_tv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <Button
+        android:id="@+id/answer_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ответ"
+        android:onClick="goNewView"
+        android:textSize="30dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/answer_ed" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
